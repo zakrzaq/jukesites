@@ -62,14 +62,14 @@ body {
 }
 
 .home-hero-left {
-  width: 45%;
+  width: 50%;
   flex-direction: column;
   justify-content: space-around;
   display: flex;
 }
 
 .home-hero-right {
-  width: 55%;
+  width: 50%;
   position: relative;
 }
 
@@ -93,16 +93,17 @@ body {
   grid-template-rows: auto auto;
   grid-template-columns: .8fr 1fr;
   grid-auto-columns: 1fr;
+  align-items: center;
   margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
   padding-right: 40px;
   display: flex;
 }
 
 .home-spec-image {
   width: 40%;
+  transform: translate(-80px);
 }
 
 .home-spec-right {
@@ -252,6 +253,7 @@ body {
 
 .home-hero-text {
   max-width: 450px;
+  margin-bottom: 60px;
   font-size: 25px;
   line-height: 135%;
 }
@@ -659,6 +661,10 @@ body {
   display: inline-block;
 }
 
+.button--black.button-contact {
+  margin-top: 20px;
+}
+
 .profolio-card-tags {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -759,7 +765,7 @@ body {
 .contact-tile {
   color: #000;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-size: 50px;
   font-weight: 600;
   line-height: 122%;
@@ -767,7 +773,7 @@ body {
 
 .contact-text {
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 135%;
 }
 
@@ -787,7 +793,9 @@ body {
 
 .input-label {
   color: #000;
+  letter-spacing: .227em;
   text-transform: uppercase;
+  margin-bottom: 10px;
   font-size: 18px;
 }
 
@@ -796,6 +804,7 @@ body {
 }
 
 .input-text {
+  border: 0 solid #000;
   border-radius: 4px;
   margin-bottom: 30px;
   font-size: 18px;
@@ -803,6 +812,7 @@ body {
 
 .tex-area {
   min-height: 150px;
+  border: 0 solid #000;
   border-radius: 4px;
   margin-bottom: 30px;
   font-size: 18px;
@@ -892,12 +902,12 @@ body {
 
 .hero-wrapper {
   max-width: 1240px;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  margin-top: 175px;
+  margin-top: 125px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 40px;
@@ -1038,6 +1048,7 @@ body {
 
   .home-spec-image {
     height: 100%;
+    display: none;
   }
 
   .home-spec-right {
@@ -1061,7 +1072,7 @@ body {
 
   .home-hero-text {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .sec-home-brands {
@@ -1212,7 +1223,7 @@ body {
   }
 
   .sec-home-services {
-    margin-top: 160px;
+    margin-top: 120px;
     padding: 30px;
   }
 
@@ -1237,13 +1248,20 @@ body {
     font-size: 20px;
   }
 
+  .home-team {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .home-team-cards {
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
     flex-direction: column;
     align-items: center;
   }
 
   .sec-home-brands {
-    padding: 160px 20px 20px;
+    padding: 120px 20px 20px;
   }
 
   .home-brands-title {
@@ -1256,6 +1274,7 @@ body {
   }
 
   .sec-home-portfolio {
+    margin-top: 120px;
     margin-bottom: 160px;
     padding-left: 30px;
     padding-right: 30px;
@@ -1330,7 +1349,12 @@ body {
     padding-right: 40px;
   }
 
+  .button--black.button--hero {
+    font-size: 22px;
+  }
+
   .home-proflofio-heading {
+    margin-bottom: 60px;
     font-size: 70px;
   }
 
@@ -1353,7 +1377,11 @@ body {
     font-size: 40px;
   }
 
-  .contact-text, .footer-text-bold {
+  .contact-text {
+    font-size: 22px;
+  }
+
+  .footer-text-bold {
     font-size: 24px;
   }
 
@@ -1368,6 +1396,10 @@ body {
 
   .lfooter-text {
     font-size: 18px;
+  }
+
+  .heading-2 {
+    margin-bottom: 60px;
   }
 
   .html-embed {
@@ -1402,8 +1434,16 @@ body {
     width: 100%;
   }
 
+  .sec-home-services {
+    margin-top: 40px;
+  }
+
   .service-title-image {
     display: none;
+  }
+
+  .home-services-grid {
+    margin-bottom: 80px;
   }
 
   .service-card {
@@ -1428,11 +1468,16 @@ body {
   }
 
   .sec-home-brands {
-    margin-top: 60px;
+    margin-top: 0;
+    padding-top: 60px;
   }
 
   .home-brands-title {
     font-size: 24px;
+  }
+
+  .sec-home-portfolio {
+    margin-bottom: 80px;
   }
 
   .container {
@@ -1471,7 +1516,7 @@ body {
   }
 
   .home-proflofio-heading {
-    margin-bottom: 57px;
+    margin-bottom: 30px;
     font-size: 50px;
   }
 
@@ -1494,7 +1539,11 @@ body {
     font-size: 34px;
   }
 
-  .contact-text, .footer-text-bold {
+  .contact-text {
+    font-size: 20px;
+  }
+
+  .footer-text-bold {
     font-size: 22px;
   }
 
